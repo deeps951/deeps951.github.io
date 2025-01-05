@@ -1,239 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Explore the creative world of Andrew, showcasing his music, photography, and web development projects." />
-        <meta name="author" content="Andrew Cox" />
-        <meta name="creation-date" content="2024">
-        <title>Andrew Cox - Profile</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-<!--        Custom CSS properties -->
-        <style>
-            .bg-green{
-                background-color: #283618;
-            }
-            .bg-brown{
-                background-color: #bc6c25;
-            }
-            .text-brown{
-                color: #bc6c25;
-            }
-        </style>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Cox - Profile</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome for icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
 
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-green fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Andrew Cox</span>
-                <span class="d-none d-lg-block"><img class=" bg-brown img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/AndrewC.jpg" alt="Andrew drinking coffee" loading="lazy" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-<!--                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>-->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-<!--                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>-->
-                </ul>
+        /* Sidebar */
+        nav {
+            background-color: #283618;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #d97706; /* Amber-like color */
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            color: #e4e4e4;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            margin: 0 0 20px;
+            color: #bc6c25; /* Brown color */
+        }
+
+        h1 span {
+            color: #283618; /* Dark Green */
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            color: #bc6c25;
+            font-size: 1.5em;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #8c4d1a; /* Darker shade of brown */
+        }
+
+        .experience-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            margin-bottom: 20px;
+        }
+
+        .experience-item div:last-child {
+            font-weight: bold;
+            color: #bc6c25;
+        }
+
+        ul.skills {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        ul.skills li {
+            text-align: center;
+            padding: 10px;
+            background: #e5e5e5;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .fa-ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fa-ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #283618;
+            color: #fff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav>
+    <img src="assets/img/AndrewC.jpg" alt="Andrew drinking coffee" />
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- About Section -->
+    <section id="about">
+        <h1>Andrew <span>Cox</span></h1>
+        <div>Gold Coast, QLD 4217 · 041 77 37 813</div>
+        <p>Andrew is a Gold Coast creative with a heart for making people feel accepted and celebrated, no matter their past. Whether he's crafting songs, sharing coffee, or engaging in deep conversations, his genuine warmth and kindness leave a lasting impression.</p>
+        <p class="social-icons">
+            <a href="https://github.com/deeps951" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <div>
+                <h3>Public Area Cleaner</h3>
+                <p>Mantra Circle on Cavil</p>
+                <p>Andrew brings a sense of care and pride to every space he touches. It's about creating environments where people feel comfortable and welcomed.</p>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Andrew
-                        <span class="text-brown">Cox</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Gold Coast, QLD 4217 · 041 77 37 813
-<!--                        <a class="text-brown" href="mailto:name@email.com">deeps951@gmail.com</a>-->
-                    </div>
-                    <p class="lead mb-5">Andrew is a Gold Coast creative with a heart for making people feel accepted and celebrated, no matter their past. Whether he's crafting songs, sharing coffee, or engaging in deep conversations, his genuine warmth and kindness leave a lasting impression. Passionate about travel, photography, and meaningful connections, Andrew’s charm and creativity inspire everyone around him to embrace their true selves.</p>
-                    <div class="social-icons">
-<!--                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>-->
-                        <a class="text-brown social-icon" href="https://github.com/deeps951" target="_blank"><i class="fab fa-github"></i></a>
-<!--                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>-->
-<!--                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>-->
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5 text-brown">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Public Area Cleaner</h3>
-                            <div class="subheading mb-3">Mantra Circle on Cavil</div>
-                            <p>As a public area cleaner, Andrew brings a sense of care and pride to every space he touches. It's more than just a job for him — it's about creating environments where people feel comfortable and welcomed. His attention to detail and dedication ensure that every corner shines, and his positive energy makes the everyday extraordinary. For Andrew, even the smallest act of cleanliness is an opportunity to contribute to the beauty and harmony of the community.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-brown">2021 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3"></div>
-                            <p>As an emerging web developer with a passion for simplicity and creativity in design. Focused on building clean, functional sites, he's driven by the desire to share his story and connect with others. With a natural curiosity for new tools and frameworks, Andrew approaches every project with a learner's mindset, eager to perfect his skills. Whether he's developing a personal profile or experimenting with code, his attention to detail and thoughtful approach make his work truly stand out.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Musician</h3>
-                            <div class="subheading mb-3"></div>
-                            <p>A soulful musician whose passion for storytelling shines through every note he plays. With a deep connection to his craft, he blends emotion and creativity to create music that resonates on a personal level. Always exploring new sounds and styles, Andrew’s music reflects his journey, offering listeners a raw and authentic experience. Whether he's writing songs or jamming with friends, his talent and dedication bring a unique voice to the world of music.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Flying Instructor</h3>
-                            <div class="subheading mb-3"></div>
-                            <p>As was a calm and encouraging flying instructor who thrived on guiding others to new heights — literally. With a passion for aviation and a patient approach, he made the complex world of flight feel accessible to anyone willing to learn. His clear communication and steady support instilled confidence in his students, helping them navigate the skies with ease. For Andrew, teaching others to fly wasn’t just about the mechanics; it was about empowering people to embrace their potential and soar beyond their limits.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-<!--            <section class="resume-section" id="education">-->
-<!--                <div class="resume-section-content">-->
-<!--                    <h2 class="mb-5">Education</h2>-->
-<!--                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">-->
-<!--                        <div class="flex-grow-1">-->
-<!--                            <h3 class="mb-0">University of Colorado Boulder</h3>-->
-<!--                            <div class="subheading mb-3">Bachelor of Science</div>-->
-<!--                            <div>Computer Science - Web Development Track</div>-->
-<!--                            <p>GPA: 3.23</p>-->
-<!--                        </div>-->
-<!--                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>-->
-<!--                    </div>-->
-<!--                    <div class="d-flex flex-column flex-md-row justify-content-between">-->
-<!--                        <div class="flex-grow-1">-->
-<!--                            <h3 class="mb-0">James Buchanan High School</h3>-->
-<!--                            <div class="subheading mb-3">Technology Magnet Program</div>-->
-<!--                            <p>GPA: 3.56</p>-->
-<!--                        </div>-->
-<!--                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </section>-->
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5 text-brown">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-check"></i></span>-->
-<!--                            Cross-Functional Teams-->
-<!--                        </li>-->
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5 text-brown">Interests</h2>
-                    <p>Andrew is a creative spirit with a deep passion for storytelling, whether through music, photography, or web development. With a background in music, he crafts songs that reflect his life experiences, blending emotion with creativity to connect with listeners on a personal level. His love for photography is rooted in capturing the beauty of everyday moments, especially the stunning landscapes and vibrant life of the Gold Coast. Through his lens, Andrew seeks to preserve the stories of places and people, creating visuals that inspire others to see the world from a new perspective.</p>
-                    <p class="mb-0">Beyond his artistic pursuits, Andrew is a dedicated web developer who enjoys building simple, functional websites that communicate and connect. He thrives on learning new tools and coding techniques, always aiming to create spaces that reflect his unique style and values. Whether he's composing a new melody, exploring the world through photography, or developing a personal project, Andrew is driven by a passion to share, inspire, and make meaningful connections with others.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-<!--            <section class="resume-section" id="awards">-->
-<!--                <div class="resume-section-content">-->
-<!--                    <h2 class="mb-5">Awards & Certifications</h2>-->
-<!--                    <ul class="fa-ul mb-0">-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            Google Analytics Certified Developer-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            Mobile Web Specialist - Google Certification-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            1-->
-<!--                            <sup>st</sup>-->
-<!--                            Place - University of Colorado Boulder - Emerging Tech Competition 2009-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            1-->
-<!--                            <sup>st</sup>-->
-<!--                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            2-->
-<!--                            <sup>nd</sup>-->
-<!--                            Place - University of Colorado Boulder - Emerging Tech Competition 2008-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            1-->
-<!--                            <sup>st</sup>-->
-<!--                            Place - James Buchanan High School - Hackathon 2006-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>-->
-<!--                            3-->
-<!--                            <sup>rd</sup>-->
-<!--                            Place - James Buchanan High School - Hackathon 2005-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </section>-->
+            <div>2021 - Present</div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        <div class="experience-item">
+            <div>
+                <h3>Web Developer</h3>
+                <p>Focused on building clean, functional sites with creativity and attention to detail. Passionate about learning and experimenting with new tools.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div>
+                <h3>Musician</h3>
+                <p>Creates music that resonates on a personal level. Blends emotion and creativity to deliver raw and authentic experiences for listeners.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div>
+                <h3>Flying Instructor</h3>
+                <p>Guides students with a calm and encouraging approach. Empowers learners to embrace their potential and navigate the skies with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="subheading">Programming Languages & Tools</div>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Sass</li>
+            <li>WordPress</li>
+        </ul>
+        <div class="subheading">Workflow</div>
+        <ul class="fa-ul">
+            <li><i class="fas fa-check"></i> Mobile-First, Responsive Design</li>
+            <li><i class="fas fa-check"></i> Cross Browser Testing & Debugging</li>
+            <li><i class="fas fa-check"></i> Agile Development & Scrum</li>
+        </ul>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <h2>Interests</h2>
+        <p>Andrew is passionate about storytelling through music, photography, and web development. Whether composing a new melody, capturing the beauty of everyday moments, or coding personal projects, Andrew aims to inspire and connect with others meaningfully.</p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    &copy; 2024 Andrew Cox. All Rights Reserved.
+</footer>
+
+</body>
 </html>
