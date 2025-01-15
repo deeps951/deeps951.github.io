@@ -1,0 +1,76 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #f8f8f8;
+    --text-color: #000;
+    --header-text-color: white;
+
+    --font-family: 'Seravek', 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    --base-spacing: 1rem;
+
+    --small-font-size: 0.9rem;
+    --base-font-size: 1rem;
+    --large-font-size: 1.5rem;
+
+    --max-width: 1200px;
+    --border-radius: 5px;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    padding: var(--base-spacing);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 var(--base-spacing);
+}
+
+header nav ul li a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-size: var(--base-font-size);
+}
+
+main {
+    padding: calc(var(--base-spacing) * 2);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: calc(var(--base-spacing) * 4);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: var(--base-spacing);
+    font-size: var(--small-font-size);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: var(--base-spacing) 0;
+    }
+}
