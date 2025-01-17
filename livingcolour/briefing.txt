@@ -1,6 +1,12 @@
 architecturally designed house
 contemporary deigned house
 
+colours from hero image
+
+white: rdg: rgb(252, 254, 254)
+text: tgb: rgb(16, 19, 21);
+accent:  rgb(135, 185, 212);
+
 
 elements removed
 <header class="bg-white shadow">
