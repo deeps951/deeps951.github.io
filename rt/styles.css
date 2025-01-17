@@ -1,133 +1,37 @@
-/* Define CSS Variables */
-:root {
-    --primary-color: #F5E7DE;
-    --secondary-color: #F2BFA4;
-    --text-color: #F2BFA4;
-    --header-text-color: #800000;
-
-    --font-family: 'Seravek', 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-    --base-spacing: 1rem;
-
-    --small-font-size: 0.9rem;
-    --base-font-size: 1rem;
-    --large-font-size: 1.5rem;
-
-    --max-width: 1200px;
-    --border-radius: 5px;
-}
-
-/* Base Styles */
-body {
-    font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    background: snow;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--header-text-color);
-    padding: var(--base-spacing);
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 var(--base-spacing);
-}
-
-header nav ul li a {
-    color: var(--header-text-color);
-    text-decoration: none;
-    font-size: var(--base-font-size);
-}
-
-main {
-    padding: calc(var(--base-spacing) * 2);
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: calc(var(--base-spacing) * 4);
-    /*background-color: hotpink;*/
-}
-
-footer {
-    text-align: center;
-    background-color: var(--secondary-color);
-    padding: var(--base-spacing);
-    font-size: var(--small-font-size);
-}
+/* Custom Styles for Andrew's Portfolio */
 
 /* Hero Section */
 #hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    background: linear-gradient(
-            rgba(0, 0, 0, 0.5), /* Dark overlay */
-            rgba(0, 0, 0, 0.5)
-    ),
-    url('images/Surfers Paradise.jpg') no-repeat center center/cover;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures no extra spacing is added */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+/* General CSS rules */
+.yellow-bordered-text {
+    color: yellow; /* Text color */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Simulates a border */
 }
 
-.hero-content {
-    max-width: var(--max-width);
+
+/* About Section */
+#about h2 {
+    font-size: 2rem;
 }
 
-.hero-content h1 {
-    font-size: calc(var(--large-font-size) * 2);
-    margin-bottom: var(--base-spacing);
+/* Projects Cards */
+.w3-card {
+    background-color: #f4f4f4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hero-content p {
-    font-size: var(--base-font-size);
-    margin-bottom: calc(var(--base-spacing) * 2);
+.w3-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--header-text-color);
-    padding: var(--base-spacing) calc(var(--base-spacing) * 2);
-    font-size: var(--base-font-size);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-
-/* Buttons and Inputs */
-button, input, textarea {
-    font-family: var(--font-family);
-    font-size: var(--base-font-size);
-    border-radius: var(--border-radius);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin: var(--base-spacing) 0;
-    }
+/* Footer */
+footer {
+    font-size: 0.9rem;
 }

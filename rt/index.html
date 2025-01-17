@@ -3,57 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Andrew's Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-black">
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Andrew's Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-mobile">Projects</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<header class="w3-display-container w3-center w3-padding-64" id="hero" style="background-image: url('images/Surfers Paradise.jpg'); background-size: cover; height: 100vh;">
+    <div class="w3-display-middle w3-text-white">
+        <h1 class="w3-xxlarge yellow-bordered-text">Welcome to My Portfolio</h1>
+        <p class="yellow-bordered-text">Crafting unique designs, writing soulful music, and capturing life through photography.</p>
+    </div>
 </header>
 
-<main>
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Crafting unique designs, writing soulful music, and capturing the beauty of life through photography.</p>
-            <a href="#projects" class="cta-button">View My Work</a>
+<!-- About Section -->
+<section id="about" class="w3-container w3-padding-64">
+    <h2>About Me</h2>
+    <p>
+        Hi there! I’m Andrew, a creative soul based on the beautiful Gold Coast in Queensland, Australia. By day, I work as a Public Area Cleaner in a residential tower, but my true passions lie in music, photography, and design.
+    </p>
+    <p>
+        I’m a multi-instrumentalist who plays bass guitar and saxophone, and I love pouring my emotions into songwriting. When I’m not making music, you’ll find me behind the lens capturing life’s beauty, or designing with a unique human-centered approach—using colors inspired by the body, like hair, eyes, and skin tones, to create designs that feel alive.
+    </p>
+    <p>
+        Whether I’m crafting melodies, exploring exciting places locally or abroad, or enjoying a perfectly brewed coffee or a creative cocktail, I aim to live life with style and passion. Welcome to my portfolio—let’s create something amazing together!
+    </p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="w3-container w3-padding-64">
+    <h2>My Projects</h2>
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <div class="w3-card w3-padding">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
         </div>
-    </section>
-    <section id="about">
-        <h1>Hi, I'm Andrew</h1>
-        <p>Welcome to my portfolio. I’m passionate about web design, music, and photography!</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project Name</h3>
-            <p>Description of the project.</p>
+        <div class="w3-half">
+            <div class="w3-card w3-padding">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<!-- Contact Section -->
+<section id="contact" class="w3-container w3-padding-64 w3-light-grey">
+    <h2>Contact Me</h2>
+    <form class="w3-container">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Your Name" required>
+        <label>Email</label>
+        <input class="w3-input w3-border" type="email" placeholder="Your Email" required>
+        <label>Message</label>
+        <textarea class="w3-input w3-border" placeholder="Your Message"></textarea>
+        <button type="submit" class="w3-button w3-black w3-margin-top">Send</button>
+    </form>
+</section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
-
-<footer>
+<!-- Footer -->
+<footer class="w3-container w3-center w3-black w3-padding-32">
     <p>&copy; 2025 Andrew's Portfolio</p>
 </footer>
+
 </body>
 </html>
