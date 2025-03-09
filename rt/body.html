@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Human Body Map</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .svg-container {
+            width: 90%;
+            max-width: 600px; /* For larger screens */
+        }
+
+        @media (max-width: 768px) {
+            .svg-container {
+                width: 100%;
+            }
+        }
+
+        .svg-container svg path {
+            fill: #d1d1d1;
+            transition: fill 0.3s ease;
+        }
+
+        .svg-container svg path:hover {
+            fill: #ff6f61; /* Highlight on hover */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="svg-container">
+    <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+        <!-- Taylor Swift-inspired body parts with connections -->
+        <path d="M100 20 C110 40, 90 40, 100 70" /> <!-- Head -->
+        <path d="M100 70 C105 85, 95 85, 100 110" /> <!-- Neck connected to the torso -->
+        <path d="M85 110 C85 180, 115 180, 115 110 Z" /> <!-- Torso connected to neck -->
+        <path d="M85 120 C70 140, 70 170, 85 180" /> <!-- Left Arm connected to torso -->
+        <path d="M115 120 C130 140, 130 170, 115 180" /> <!-- Right Arm connected to torso -->
+        <path d="M90 180 C90 260, 110 260, 110 180 Z" /> <!-- Left Leg connected to torso -->
+        <path d="M110 180 C110 260, 130 260, 130 180 Z" /> <!-- Right Leg connected to torso -->
+    </svg>
+</div>
+</body>
+</html>
