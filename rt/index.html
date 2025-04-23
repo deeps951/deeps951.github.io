@@ -1,132 +1,56 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Andrew's Creative Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew's Homepage</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<header>
+    <h1>Hi, I'm Andrew 👋</h1>
+    <p>Photographer • Musician • Web Developer</p>
+</header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Andrew</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
-                <li class="nav-item"><a class="nav-link" href="#work">My Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
+<section>
+    <h2>About Me</h2>
+    <p>Andrew is a Gold Coast creative with a heart for making people feel accepted and celebrated, no matter their past. Whether he's crafting songs, sharing coffee, or engaging in deep conversations, his genuine warmth and kindness leave a lasting impression.</p>
+</section>
+
+<section id="experience">
+    <h2>My Experience</h2>
+
+    <div>
+        <h3>🧑‍💻 Web Developer</h3>
+        <p>I craft responsive, human-centered websites using HTML5, CSS3, and frameworks like Tailwind CSS and Bootstrap. I love bringing design to life with clean code and a creative edge — always aiming to make the web a more beautiful place.</p>
     </div>
-</nav>
 
-<!-- Introduction Section -->
-<section id="introduction" class="py-5 mt-5">
-    <div class="container text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p class="lead">Hi, I'm Andrew. I'm passionate about music, creativity, and connection through art.</p>
+    <div>
+        <h3>🎷 Musician</h3>
+        <p>As a passionate musician, I play bass guitar and saxophone, and compose original music. Whether it’s laying down smooth jazz lines or creating melodic techno grooves in Logic Pro, music is my heartbeat and my favorite way to connect with the world.</p>
+    </div>
+
+    <div>
+        <h3>✈️ Flying Instructor</h3>
+        <p>I’ve had the joy (and adrenaline!) of teaching aerobatics and flight fundamentals. Being a flying instructor taught me how to stay calm under pressure, lead with clarity, and embrace the thrill of mastering new skills — lessons I bring into every project I take on.</p>
     </div>
 </section>
 
-<!-- My Work Section -->
-<section id="work" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="mb-4 text-center">My Work</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="p-3 border rounded text-center">
-                    <h5>Music</h5>
-                    <p>Original compositions and creative soundscapes.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 border rounded text-center">
-                    <h5>Photography</h5>
-                    <p>Capturing moments that tell stories.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 border rounded text-center">
-                    <h5>Web Projects</h5>
-                    <p>Simple, expressive sites to connect and inspire.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<section id="skills">
+    <h2>Web Design Skills</h2>
+    <ul>
+        <li><strong>HTML5 & CSS3:</strong> Building modern, semantic, and accessible layouts.</li>
+        <li><strong>Responsive Design:</strong> Mobile-first, fluid, and adaptable design principles.</li>
+        <li><strong>Tailwind CSS & Bootstrap:</strong> Rapid development with consistent styling and layout systems.</li>
+        <li><strong>SASS:</strong> Clean, scalable CSS with variables and mixins for organized code.</li>
+        <li><strong>UI/UX Design:</strong> Focused on user-centered design, intuitive navigation, and visual harmony.</li>
+        <li><strong>Version Control:</strong> Using Git and GitHub to manage and collaborate on projects.</li>
+    </ul>
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-5">
-    <div class="container">
-        <h2 class="mb-5 text-center">About Me</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/flying.jpg" class="card-img-top" alt="Flying Instructor">
-                    <div class="card-body">
-                        <h5 class="card-title">Flying Instructor</h5>
-                        <p class="card-text">I’ve trained pilots in aerobatics and aviation safety. Teaching others to fly has been a thrilling and fulfilling part of my journey.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/music.jpg" class="card-img-top" alt="Musician">
-                    <div class="card-body">
-                        <h5 class="card-title">Professional Musician</h5>
-                        <p class="card-text">From soulful performances to studio recording, music is where I express emotion and connect deeply with people.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/webdev.jpg" class="card-img-top" alt="Web Developer">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Developer</h5>
-                        <p class="card-text">I love building clean, expressive websites that reflect identity, tell stories, and spark interaction on the web.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="mb-4 text-center">Contact</h2>
-        <form class="mx-auto" style="max-width: 600px;">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Jane Doe">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Your Message</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center py-3 bg-dark text-light">
-    <div class="container">
-        &copy; 2025 Andrew. All rights reserved.
-    </div>
+<footer>
+    <p>© 2025 Andrew • Find me on <a href="https://github.com/yourusername">GitHub</a></p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

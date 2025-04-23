@@ -2,3 +2,9 @@ in about me
 - flying instructor with aerobatics
 - professional musician
 - web designer
+
+
+
+
+extra links!
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
