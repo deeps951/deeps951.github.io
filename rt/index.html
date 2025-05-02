@@ -2,48 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Andrew | Web Developer & Creative</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="images/favicon.ico" />
 </head>
 <body>
+<section class="hero position-relative text-white text-center d-flex align-items-center" style="background-image: url('images/hero.jpg'); height: 100vh; background-size: cover; background-position: center;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+    <div class="container position-relative z-2">
+        <h1 class="display-4">Crafting Digital Harmony</h1>
+        <p class="lead">Web developer, musician, and former flying instructor based on the Gold Coast.</p>
+        <!-- <a href="#experience" class="btn btn-light btn-lg mt-4">Explore My Work</a> -->
+    </div>
+</section>
 
-<main class="container">
-    <header>
-        <h1>Hi, I'm Andrew 👋</h1>
-        <p>Welcome to my little corner of the web. I’m a passionate web developer and music maker based on the sunny Gold Coast in Queensland, Australia. My work blends creativity, precision, and a deep love for human connection — whether I’m writing clean code, composing melodic techno, or capturing a moment through the lens of my camera.</p>
+<div class="container py-5">
+    <header class="text-center mb-5">
 
-        <p>Before diving into the world of web and music full-time, I was a flying instructor — teaching aerobatics and flight fundamentals. That experience gave me a calm, focused approach I now bring into every project I take on. Today, I craft accessible websites with a designer’s eye, drawing from natural color palettes and bold accents to create something truly human. Whether you’re here for my music, my photography, or to geek out over HTML and CSS, I’m glad you stopped by.</p>
     </header>
 
-    <section id="experience">
-        <h2>My Experience</h2>
+    <section class="mb-5">
+        <h2 class="mb-4">About Me</h2>
+        <div class="row align-items-center">
 
-        <p><strong>Web Developer:</strong> I create responsive, human-centered websites using modern technologies like HTML5, CSS3, Tailwind CSS, and Bootstrap. I love designing interfaces that feel natural and intuitive — using code as a creative tool to shape experiences that connect with people. I approach development with a designer’s mindset, paying attention to structure, flow, and the emotional tone that a digital space can evoke.</p>
+            <!-- Profile Image -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <img src="images/me.jpg" alt="Photo of Andrew" class="img-fluid rounded shadow">
+            </div>
 
-        <p><strong>Musician:</strong> Music has always been part of my rhythm. I play bass guitar and saxophone, and I write and produce my own tracks — often exploring melodic techno and emotionally rich soundscapes in Logic Pro. For me, music is both expressive and grounding; it’s where I find flow, emotion, and freedom. It also fuels the way I think about timing, harmony, and rhythm in other creative disciplines — like coding and visual design.</p>
+            <!-- About Text -->
+            <div class="col-md-8">
+                <p>Welcome to my little corner of the web. I’m a passionate web developer and music maker based on the sunny Gold Coast in Queensland, Australia. My work blends creativity, precision, and a deep love for human connection — whether I’m writing clean code, composing melodic techno, or capturing a moment through the lens of my camera.</p>
+                <p>Before diving into the world of web and music full-time, I was a flying instructor — teaching aerobatics and flight fundamentals. That experience gave me a calm, focused approach I now bring into every project I take on. Today, I craft accessible websites with a designer’s eye, drawing from natural color palettes and bold accents to create something truly human. Whether you’re here for my music, my photography, or to geek out over HTML and CSS, I’m glad you stopped by.</p>
+            </div>
 
-        <p><strong>Former Flying Instructor:</strong> In a previous chapter of my life, I taught people how to fly — including aerobatics. It was an incredible experience that taught me clarity, patience, and how to stay grounded under pressure (pun intended!). While I’ve since moved on, the lessons I learned in the cockpit still shape my approach to life and work: stay focused, stay calm, and enjoy the journey.</p>
+        </div>
     </section>
 
-<!--    <section>-->
-<!--        <h2>Web Design Skills</h2>-->
-<!--        <div class="grid">-->
-<!--            <button class="secondary">HTML5</button>-->
-<!--            <button class="secondary">CSS3</button>-->
-<!--            <button class="secondary">Responsive Design</button>-->
-<!--            <button class="secondary">Tailwind CSS</button>-->
-<!--            <button class="secondary">Bootstrap</button>-->
-<!--            <button class="secondary">SASS</button>-->
-<!--            <button class="secondary">UI/UX Design</button>-->
-<!--            <button class="secondary">Git & GitHub</button>-->
-<!--        </div>-->
-<!--    </section>-->
+    <section class="mb-5">
+        <h2>My Experience</h2>
+        <p><strong>Web Developer:</strong> I create responsive, human-centered websites using HTML5, CSS3, Tailwind CSS, and Bootstrap. I love designing interfaces that feel intuitive and meaningful — using code as a canvas to shape emotional, accessible experiences.</p>
+        <p><strong>Musician:</strong> I play bass guitar and saxophone, and I compose original tracks — often exploring melodic techno vibes. For me, music is both expression and meditation, and it deeply informs my rhythm, timing, and creative storytelling across mediums.</p>
+        <p><strong>Former Flying Instructor:</strong> I once taught students how to master aerobatics and flight fundamentals. That chapter instilled in me patience, clarity, and an appreciation for calm focus — values I carry into everything I do today.</p>
+    </section>
 
-    <footer>
-        <p>© 2025 Andrew • <a href="https://github.com/yourusername">View my GitHub</a></p>
+    <section class="mb-5">
+        <h2>Skills</h2>
+        <div class="d-flex flex-wrap gap-2">
+            <span class="btn btn-outline-dark">HTML5</span>
+            <span class="btn btn-outline-dark">CSS3</span>
+            <span class="btn btn-outline-dark">Responsive Design</span>
+            <span class="btn btn-outline-dark">Tailwind CSS</span>
+            <span class="btn btn-outline-dark">Bootstrap</span>
+            <span class="btn btn-outline-dark">SASS</span>
+            <span class="btn btn-outline-dark">UI/UX Design</span>
+            <span class="btn btn-outline-dark">Git & GitHub</span>
+        </div>
+    </section>
+
+    <footer class="text-center mt-5">
+        <p class="text-muted">© <span id="year"></span> Andrew • <a href="https://github.com/deeps951" class="text-decoration-none">GitHub Profile</a></p>
     </footer>
-</main>
+</div>
 
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
