@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Andrew | Web Developer & Creative</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew | Crafting Digital Harmony</title>
 </head>
 <body>
-<section class="hero position-relative text-white text-center d-flex align-items-center" style="background-image: url('images/hero.jpg'); height: 100vh; background-size: cover; background-position: center;">
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
-    <div class="container position-relative z-2">
-        <h1 class="display-4">Crafting Digital Harmony</h1>
-        <p class="lead">Web developer, musician, and former flying instructor based on the Gold Coast.</p>
-        <!-- <a href="#experience" class="btn btn-light btn-lg mt-4">Explore My Work</a> -->
-    </div>
-</section>
 
-<div class="container py-5">
-    <header class="text-center mb-5">
+<!-- Site Header -->
+<header>
+    <h1>Andrew</h1>
+    <p>Crafting digital harmony</p>
 
-    </header>
+    <!-- Optional minimal nav -->
+    <nav>
+        <ul>
+            <li><a href="#about-preview">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="mb-5">
-        <h2 class="mb-4">About Me</h2>
-        <div class="row align-items-center">
+<!-- Main Content Area -->
+<main>
 
-            <!-- Profile Image -->
-            <div class="col-md-4 mb-4 mb-md-0">
-                <img src="images/me.jpg" alt="Photo of Andrew" class="img-fluid rounded shadow">
-            </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Who is Andrew?</h2>
+        <p>Look closer. You’ll see rhythm in the pixels.</p>
 
-            <!-- About Text -->
-            <div class="col-md-8">
-                <p>Welcome to my little corner of the web. I’m a passionate web developer and music maker based on the sunny Gold Coast in Queensland, Australia. My work blends creativity, precision, and a deep love for human connection — whether I’m writing clean code, composing melodic techno, or capturing a moment through the lens of my camera.</p>
-                <p>Before diving into the world of web and music full-time, I was a flying instructor — teaching aerobatics and flight fundamentals. That experience gave me a calm, focused approach I now bring into every project I take on. Today, I craft accessible websites with a designer’s eye, drawing from natural color palettes and bold accents to create something truly human. Whether you’re here for my music, my photography, or to geek out over HTML and CSS, I’m glad you stopped by.</p>
-            </div>
 
-        </div>
+
     </section>
 
-    <section class="mb-5">
-        <h2>My Experience</h2>
-        <p><strong>Web Developer:</strong> I create responsive, human-centered websites using HTML5, CSS3, Tailwind CSS, and Bootstrap. I love designing interfaces that feel intuitive and meaningful — using code as a canvas to shape emotional, accessible experiences.</p>
-        <p><strong>Musician:</strong> I play bass guitar and saxophone, and I compose original tracks — often exploring melodic techno vibes. For me, music is both expression and meditation, and it deeply informs my rhythm, timing, and creative storytelling across mediums.</p>
-        <p><strong>Former Flying Instructor:</strong> I once taught students how to master aerobatics and flight fundamentals. That chapter instilled in me patience, clarity, and an appreciation for calm focus — values I carry into everything I do today.</p>
+    <!-- About Preview Section -->
+    <section id="about-preview">
+        <h2>About Me</h2>
+        <p>Andrew is a designer, musician, and storyteller based on the Gold Coast, blending earthy human elements with digital craftsmanship to create experiences that are both soulful and striking. Whether he’s capturing fleeting light through a lens, composing beats that pulse with emotion, or building beautifully structured web pages, his work reflects a deep reverence for rhythm — in sound, in shape, in story. With an instinct for harmony and a passion for authenticity, Andrew doesn’t just make things — he makes meaning.</p>
+
+        <p>A lifelong learner and creator, Andrew moves fluidly between code and creativity, sipping coffee in the morning and crafting synth lines by night. He draws inspiration from the textures of nature — the rhythm of waves, the stillness of dusk, the quiet wisdom in tangled branches and coastal skies. With a curious heart and an intentional hand, he invites you into a world where art meets function, elegance meets edge, and every click or chord is an invitation to feel something real.</p>
+
+        <a href="#about-full">My Story</a>
     </section>
 
-    <section class="mb-5">
-        <h2>Skills</h2>
-        <div class="d-flex flex-wrap gap-2">
-            <span class="btn btn-outline-dark">HTML5</span>
-            <span class="btn btn-outline-dark">CSS3</span>
-            <span class="btn btn-outline-dark">Responsive Design</span>
-            <span class="btn btn-outline-dark">Tailwind CSS</span>
-            <span class="btn btn-outline-dark">Bootstrap</span>
-            <span class="btn btn-outline-dark">SASS</span>
-            <span class="btn btn-outline-dark">UI/UX Design</span>
-            <span class="btn btn-outline-dark">Git & GitHub</span>
-        </div>
+    <!-- Portfolio / Featured Work -->
+    <section id="portfolio">
+        <h2>Featured Work</h2>
+
+        <article>
+            <h3>Design: Human Tones</h3>
+            <p>A visual project inspired by skin, veins, and light — reflecting our shared physicality.</p>
+        </article>
+
+        <article>
+            <h3>Music: Synth in Shadow</h3>
+            <p>A techno pulse wrapped in melancholy — composed at 128BPM in D# minor.</p>
+        </article>
+
+        <article>
+            <h3>Photography: Still Silence</h3>
+            <p>Fragments of stillness — light and silence captured through the lens.</p>
+        </article>
+
     </section>
 
-    <footer class="text-center mt-5">
-        <p class="text-muted">© <span id="year"></span> Andrew • <a href="https://github.com/deeps951" class="text-decoration-none">GitHub Profile</a></p>
-    </footer>
-</div>
+    <!-- Optional Aside -->
+    <aside>
+        <h2>Current Mood</h2>
+        <p>“Beneath all noise, a rhythm waits.”</p>
+        <p>Now playing: A vinyl crackle and a deep breath.</p>
+    </aside>
 
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="mailto:andrew@example.com">andrew@example.com</a></p>
+        <p>Find me on:
+            <a href="https://github.com/yourhandle">GitHub</a> |
+            <a href="https://instagram.com/yourhandle">Instagram</a>
+        </p>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Andrew. Crafted with clarity and code.</p>
+    <p>Thanks for wandering through my world.</p>
+</footer>
+
 </body>
 </html>
