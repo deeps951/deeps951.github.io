@@ -1,0 +1,71 @@
+/* Global resets and fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf0;
+    color: #2e2e2e;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    color: #a94438;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #a94438;
+    display: inline-block;
+}
+
+.tagline {
+    font-style: italic;
+    color: #6b4c3b;
+}
+
+/* Section spacing */
+section {
+    margin: 40px 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(to bottom, #ffe4c4, #fffaf0);
+    border-radius: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer a {
+    color: #a94438;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
