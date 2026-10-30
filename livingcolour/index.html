@@ -1,333 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<!doctype html>
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Living Colour Interiors</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
-    <!-- Optional: Include Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        /* Custom Styles */
-        body{
-            background-color: rgb(252, 254, 254);
-            color: rgb(16, 19, 21);
-        }
-        .btn-primary{
-            background-color: rgb(81, 142, 225);
-        }
-        .hero {
-            background-image: url('https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            position: relative;
-            color: white;
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Living Colour Interiors — an archived web design project featuring residential interiors, colour and craftsmanship.">
+  <title>Living Colour Interiors | Portfolio Project</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<audio autoplay muted loop>
-    <source src="music/lofi-piano.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-
-<!-- Hero Section -->
-<section id="home" class="hero d-flex align-items-center">
-    <div class="hero-overlay"></div>
-    <div class="container text-center hero-content">
-        <h1 class="display-4 fw-bold">Living Colour Interiors</h1>
-        <p class="lead">Transforming interiors with color and creativity.</p>
-        <h2>&#x260F; 0481 389 398</h2>
-<!--        <a href="#portfolio" class="btn btn-primary btn-lg">View Our Portfolio</a>-->
-    </div>
-</section>
-
-<!-- About Us -->
-<section id="about" class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="img/Profile01.jpg" alt="Greg Roche" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <h2 class="text-indigo-600">About Us</h2>
-                <p>At Living Colour Interiors, led by Greg Roche, we specialize in creating vibrant and personalized spaces that reflect your unique style. With years of experience in interior design and professional painting, we bring your vision to life with creativity and precision.</p>
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Interior Design Section -->
-<section id="interior-design" class="py-5">
-    <div class="container">
-        <!-- Section Heading -->
-        <h2 class="text-center text-indigo-600 mb-5">Our Interior Design Expertise</h2>
-
-        <!-- Section Description -->
-        <p class="text-center mb-5">At Living Colour Interiors, Greg Roche combines creativity and functionality to transform your spaces into stunning showcases. Explore some of our recent projects that highlight our commitment to excellence and attention to detail.</p>
-
-        <!-- Image Gallery -->
-        <div class="row g-4">
-            <!-- Image 1 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg" class="card-img-top" alt="Modern Living Room">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Living Room</h5>
-                        <p class="card-text">A contemporary space featuring minimalist design and vibrant accents.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image 2 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/271744/pexels-photo-271744.jpeg" class="card-img-top" alt="Elegant Kitchen">
-                    <div class="card-body">
-                        <h5 class="card-title">Elegant Kitchen</h5>
-                        <p class="card-text">A sleek kitchen with custom cabinetry and modern fixtures.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image 3 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg" class="card-img-top" alt="Cozy Bedroom">
-                    <div class="card-body">
-                        <h5 class="card-title">Cozy Bedroom</h5>
-                        <p class="card-text">A tranquil bedroom space designed for relaxation and comfort.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image 4 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" class="card-img-top" alt="Stylish Office">
-                    <div class="card-body">
-                        <h5 class="card-title">Stylish Office</h5>
-                        <p class="card-text">A functional office setup with ergonomic furniture and inspiring decor.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image 5 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg" class="card-img-top" alt="Luxurious Bathroom">
-                    <div class="card-body">
-                        <h5 class="card-title">Luxurious Bathroom</h5>
-                        <p class="card-text">A spa-like bathroom featuring elegant fixtures and soothing colors.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image 6 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg" class="card-img-top" alt="Open-Concept Dining Area">
-                    <div class="card-body">
-                        <h5 class="card-title">Open-Concept Dining Area</h5>
-                        <p class="card-text">A spacious dining area designed for entertaining and everyday use.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Portfolio -->
-<section id="portfolio" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center text-indigo-600 mb-5">Our Portfolio</h2>
-        <div class="row g-4">
-            <!-- Project 1 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/4307935/pexels-photo-4307935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Modern Living Room">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Living Room</h5>
-                        <p class="card-text">A contemporary living space with vibrant accents and functional design.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Elegant Kitchen">
-                    <div class="card-body">
-                        <h5 class="card-title">Elegant Kitchen</h5>
-                        <p class="card-text">A sleek and modern kitchen with custom cabinetry and colorful details.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://images.pexels.com/photos/3975644/pexels-photo-3975644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Cozy Bedroom">
-                    <div class="card-body">
-                        <h5 class="card-title">Cozy Bedroom</h5>
-                        <p class="card-text">A tranquil bedroom space with a harmonious color palette and comfortable furnishings.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </div>
-</section>
-
-<!-- Services -->
-<section id="services" class="py-5">
-    <div class="container">
-        <h2 class="text-center text-indigo-600 mb-5">Our Services</h2>
-        <div class="row g-4">
-            <!-- Service 1 -->
-            <div class="col-md-4 text-center">
-                <div class="mb-3">
-                    <i class="bi bi-gear-fill fs-1 text-indigo-600"></i>
-                </div>
-                <h4>Interior Design</h4>
-                <p>Creating personalized and functional interior spaces that reflect your style.</p>
-            </div>
-            <!-- Service 2 -->
-            <div class="col-md-4 text-center">
-                <div class="mb-3">
-                    <i class="bi bi-palette-fill fs-1 text-indigo-600"></i>
-                </div>
-                <h4>Professional Painting</h4>
-                <p>Expert painting services that enhance and protect your interiors.</p>
-            </div>
-            <!-- Service 3 -->
-            <div class="col-md-4 text-center">
-                <div class="mb-3">
-                    <i class="bi bi-droplet-fill fs-1 text-indigo-600"></i>
-                </div>
-                <h4>Color Consultation</h4>
-                <p>Personalized color schemes to create the perfect ambiance for your space.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials -->
-<section id="testimonials" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center text-indigo-600 mb-5">What Our Clients Say</h2>
-        <div class="row g-4">
-            <!-- Testimonial 1 -->
-            <div class="col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <p class="card-text">"Living Colour Interiors transformed our living room into a vibrant and welcoming space. Greg's attention to detail and creative vision are unparalleled."</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <span style='font-size:100px;'>&#128120;</span>
-                            <img src="" alt="" class="rounded-circle me-3">
-                            <div>
-                                <h6 class="mb-0">Sarah K.</h6>
-                                <small class="text-muted">Homeowner</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Testimonial 2 -->
-            <div class="col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <p class="card-text">"The team at Living Colour Interiors provided exceptional painting services for our office. The space now feels more energetic and professional."</p>
-                        <div class="d-flex align-items-center mt-3">
-                            <span style='font-size:100px;'>&#129333;</span>
-                            <div>
-                                <h6 class="mb-0">James L.</h6>
-                                <small class="text-muted">Business Owner</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more testimonials as needed -->
-        </div>
-    </div>
-</section>
-
-<!-- Contact Us -->
-<section id="contact" class="py-5">
-    <div class="container">
-        <h2 class="text-center text-indigo-600 mb-5">Get in Touch</h2>
-        <div class="row g-4">
-            <!-- Contact Form -->
-            <div class="col-md-6">
-                <form action="#" method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                </form>
-            </div>
-            <!-- Contact Information -->
-            <div class="col-md-6">
-                <div class="bg-light p-4 rounded shadow">
-                    <h4 class="text-indigo-600 mb-3">Contact Information</h4>
-                    <p><strong>Phone:</strong> 0481 389 398</p>
-                    <p><strong>Email:</strong> <a href="mailto:info@livingcolourinteriors.com" class="text-decoration-none text-indigo-600">info@livingcolourinteriors.com</a></p>
-                    <p><strong>Address:</strong> Gold Coast, Queensland</p>
-                    <!-- Social Media Links -->
-                    <div class="mt-4">
-                        <a href="#" class="text-indigo-600 me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-indigo-600 me-3"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#" class="text-indigo-600"><i class="bi bi-instagram fs-4"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-indigo-600 text-white py-4">
-    <div class="container text-center">
-        <p class="mb-2">&copy; 2025 Living Colour Interiors. All rights reserved.</p>
-        <div>
-            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
-            <p>
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px"
-                         src="https://jigsaw.w3.org/css-validator/images/vcss"
-                         alt="Valid CSS!" />
-                </a>
-            </p>
-        </div>
-    </div>
-</footer>
-
-<!-- Bootstrap 5 JS Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav"><div class="container nav-inner">
+    <a href="../index.html" class="return-link">← Andrew's portfolio</a>
+    <a class="brand" href="#top">Living <em>Colour</em></a>
+    <nav aria-label="Page navigation"><a href="#about">About</a><a href="#gallery">Inspiration</a><a class="nav-contact" href="#contact">Contact</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-copy"><p class="eyebrow">INTERIORS WITH PERSONALITY</p><h1 id="hero-title">Beautiful spaces, <em>thoughtfully made.</em></h1><p>Colour, craftsmanship and considered design for the spaces we call home.</p><a class="button light" href="#about">Discover our approach <span aria-hidden="true">↘</span></a></div>
+    </section>
+    <section class="section intro" id="about"><div class="container split">
+      <div class="photo"><img src="img/Profile01.jpg" width="800" height="1000" loading="lazy" alt="Portrait of Greg Roche"></div>
+      <div class="copy"><p class="eyebrow">THE PERSON BEHIND THE WORK</p><h2>Meet Greg <em>Roche.</em></h2><p class="lead">Interiors that reflect the people who live in them.</p><p>At Living Colour Interiors, Greg brings together interior design and professional painting to create welcoming, personal spaces. The focus is on thoughtful colour choices, fine details and making a home feel genuinely yours.</p><a class="text-link" href="#contact">Get in touch ↗</a></div>
+    </div></section>
+    <section class="section gallery-section" id="gallery"><div class="container">
+      <div class="heading"><div><p class="eyebrow">SPACES & INSPIRATION</p><h2>Room to <em>imagine.</em></h2></div><p>Some interior imagery from the original design project, presented as inspiration rather than verified completed work.</p></div>
+      <div class="gallery">
+        <figure class="large"><img src="img/lounge001.jpg" alt="Comfortable furnished living area" loading="lazy"><figcaption>Inviting living spaces</figcaption></figure>
+        <figure><img src="img/kitchen-sample.jpg" alt="Contemporary kitchen design" loading="lazy"><figcaption>Beautiful everyday details</figcaption></figure>
+        <figure><img src="img/pexels-jvdm-1457841.jpg" alt="Light-filled interior" loading="lazy"><figcaption>Colour and light</figcaption></figure>
+        <figure><img src="img/pexels-valeriiamiller-20801044.jpg" alt="Thoughtfully decorated interior" loading="lazy"><figcaption>Thoughtful spaces</figcaption></figure>
+      </div>
+    </div></section>
+    <section class="services"><div class="container"><p class="eyebrow">WHAT WE BELIEVE IN</p><h2>Good design feels like <em>home.</em></h2><div class="service-grid"><article><span>01 /</span><h3>Interior design</h3><p>Welcoming spaces organised around how you really live.</p></article><article><span>02 /</span><h3>Painting</h3><p>Beautiful finishes with care and attention to the details.</p></article><article><span>03 /</span><h3>Colour advice</h3><p>Palettes that bring warmth, character and balance.</p></article></div></div></section>
+    <section class="contact section" id="contact"><div class="container contact-inner"><p class="eyebrow">START A CONVERSATION</p><h2>Let's bring your <em>vision to life.</em></h2><p>Have an interiors project in mind? Contact Living Colour directly using the details below.</p><a class="button dark" href="mailto:info@livingcolourinteriors.com">Email Living Colour ↗</a><p class="contact-detail">Gold Coast, Queensland · <a href="tel:+61481389398">0481 389 398</a></p><small>Archived portfolio project. Please verify business contact details before using.</small></div></section>
+  </main>
+  <footer><div class="container footer-inner"><a href="../index.html">← Back to Andrew's portfolio</a><span>Living Colour Interiors · design archive</span></div></footer>
 </body>
 </html>
