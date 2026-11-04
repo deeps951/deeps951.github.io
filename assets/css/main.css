@@ -88,7 +88,7 @@ h2 em,h3 em {font-weight:400;color:var(--clay)}
 
 /* Selected work */
 .work-section {background:var(--paper)}
-.project-grid {display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.project-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:27px}
 .project-visual {position:relative;display:block;aspect-ratio:1.37;overflow:hidden;background:#ddd5c5}
 .project-visual::after {content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 70%,rgba(7,20,16,.26));pointer-events:none}
 .project-visual img {width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .5s}
@@ -281,4 +281,111 @@ h2 em,h3 em {font-weight:400;color:var(--clay)}
 @media (prefers-reduced-motion:reduce) {
   html {scroll-behavior:auto}
   *,*::before,*::after {animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}
+
+/* Third portfolio card — spacious grid on desktop, two columns on tablets. */
+@media (min-width:611px) and (max-width:1100px) { .project-grid {grid-template-columns:repeat(2,minmax(0,1fr))} }
+
+/* Selected Work: pure CSS horizontal portfolio carousel.
+   The browser handles touch/trackpad scrolling and scroll snapping; the
+   numbered links above give mouse and keyboard visitors direct access. */
+.project-carousel-toolbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px 28px;
+  margin:-14px 0 26px;
+}
+.project-carousel-hint {
+  flex:none;
+  margin:0;
+  color:var(--muted);
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.15em;
+}
+.project-carousel-hint span {
+  display:inline-block;
+  color:var(--clay);
+  margin-left:7px;
+  font-size:18px;
+  line-height:0;
+  vertical-align:middle;
+}
+.project-carousel-nav {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:7px;
+}
+.project-carousel-nav a {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border:1px solid #d3d2c8;
+  border-radius:999px;
+  color:var(--ink);
+  background:transparent;
+  font-size:11px;
+  font-weight:650;
+  line-height:1.35;
+  transition:background .2s,border-color .2s,transform .2s;
+}
+.project-carousel-nav a span {font-weight:800;color:var(--clay);letter-spacing:.04em}
+.project-carousel-nav a:hover,.project-carousel-nav a:focus-visible {
+  border-color:var(--clay);
+  background:#f0e6dd;
+  transform:translateY(-1px);
+}
+.work-section .project-grid {
+  display:flex;
+  align-items:stretch;
+  gap:28px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  max-width:100%;
+  padding:6px 7px 24px;
+  margin:-6px -7px -24px;
+  scroll-snap-type:x mandatory;
+  scroll-padding-inline:7px;
+  overscroll-behavior-inline:contain;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:#b88a73 transparent;
+}
+.work-section .project-grid::-webkit-scrollbar {height:7px}
+.work-section .project-grid::-webkit-scrollbar-thumb {background:#b88a73;border-radius:20px}
+.work-section .project-grid::-webkit-scrollbar-track {background:transparent}
+.work-section .project-card {
+  flex:0 0 min(78%,790px);
+  min-width:0;
+  scroll-snap-align:start;
+  scroll-snap-stop:always;
+  scroll-margin-block-start:110px;
+}
+.work-section .project-card:last-child {scroll-snap-align:end}
+.work-section .project-visual {aspect-ratio:1.64}
+/* A subtle focus treatment lets keyboard users see the scrollable track. */
+.work-section .project-grid:focus-visible {
+  outline:2px solid var(--clay);
+  outline-offset:1px;
+}
+@media (max-width:800px) {
+  .project-carousel-toolbar {align-items:flex-start;flex-direction:column;gap:15px;margin:-2px 0 22px}
+  .project-carousel-nav {justify-content:flex-start}
+  .work-section .project-grid {gap:20px}
+  .work-section .project-card {flex-basis:86%}
+  .work-section .project-visual {aspect-ratio:1.35}
+}
+@media (max-width:610px) {
+  .project-carousel-nav a {font-size:10px;padding:7px 10px}
+  .work-section .project-grid {gap:16px}
+  .work-section .project-card {flex-basis:91%}
+  .work-section .project-info {gap:8px;padding-top:18px}
+  .work-section .project-info h3 {font-size:clamp(25px,7.2vw,32px)}
+}
+@media (prefers-reduced-motion:reduce) {
+  .work-section .project-grid {scroll-behavior:auto}
 }
