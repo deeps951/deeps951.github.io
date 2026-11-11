@@ -1,0 +1,19 @@
+UNITED CHURCH OF BACON — IMAGE RESTORATION
+
+This package restores artwork and preserves the Ten Commandments spacing fix.
+
+EASIEST SAFE REPAIR (if your current pages and CSS are otherwise working):
+1. Unzip bacon-artwork-only.zip.
+2. Open the extracted images folder.
+3. In your existing United Church of Bacon site, open assets/images/.
+   If images/ is missing, create a new folder called images inside assets/.
+4. Copy the FILES INSIDE the extracted images folder into assets/images/.
+   Do not replace the whole assets folder: that can delete its other contents.
+5. Refresh the website, using Command+Shift+R if your browser has a cached page.
+
+ALTERNATIVE FULL RESTORE:
+Unzip the-united-church-of-bacon-complete-fixed.zip. It contains the entire original
+site with all six pages, every artwork file, and the fixed CSS. Back up any edits
+you made after the first version before replacing your project.
+
+For GitHub Pages, commit and push the restored images through GitHub Desktop.
